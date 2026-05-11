@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     padding: 0;
@@ -6,9 +6,241 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-color: #f2f2f2;
     color: #000;
-  
+    
 }
+
+nav{
+    width: 100%;
+    background-color: #591505;
+    color: white;
+    position: fixed;
+    top: 0%;
+}
+
+.icono{
+    width: 24px;
+    height: 24px;
+    filter: invert();
+    /* suelta la posicion el objeto */
+    position: relative;
+    top: 6px;
+
+}
+
+.btn-subir{
+    width: 80px;
+    height: 40px;
+    background-color: #591505;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* se utiliza para controlar el orden de apilamiento de los elementos en una página web */
+    z-index: 150px;
+    transition: all 1s;
+}
+
+
+.btn-subir p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+.btn-subir:hover{
+    width: 90px;
+    background-color: white;
+    color: black;
+    text-shadow: 1px 1px 5px white;
+    border: 2px solid black;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: #d99c79;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/code1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fondo_titulo{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 50vh;
+    background-color: #8c563773;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin: 20px auto;
+}
+
+.titulo_secundario{
+    font-family: "Cabin", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin: 10px;
+}
+
+.contenedor{
+    margin-top: 15px;
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+}
+
+.contenedor p{
+    margin: 15px;
+    line-height: 15px;
+}
+
+.contenedor_franja{
+    background-color: #5d7ba6;
+}
+
+footer{
+    width: 100%;
+    background-color: #591505;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes_sociales{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.formulario{
+    width: 80%;
+    margin: 50px auto;
+    color: white;
+    padding: 15px;
+}
+
+.formulario h2{
+    margin: 10px 0;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border:  1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.guardar{
+    width: 100%;
+    font-size: 16px;
+    background-color: #591505;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 20px;
+}
+
+.cancelar{
+    width: 100%;
+    font-size: 16px;
+    background-color: #591505;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 20px;
+}
+
+/* formato galeria */
+
+.contenedor_galery{
+    max-width: 1200px;
+    margin: 16px auto;
+    padding: 10px 0;
+    color: white;
+}
+
+.galeria{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.uno{
+    grid-column: 1 /7;
+}
+
+.dos{
+    grid-column: 7 /13;
+}
+
+.tres{
+    grid-column: 1 /5;
+}
+
+.cuatro{
+    grid-column: 5 /9;
+}
+
+.cinco{
+    grid-column: 1 /9;
+}
+
+.seis{
+    grid-column: 9 /13;
+    grid-row: 2 / 4;
+}
+
+@media (max-width: 900px ){
+
+    .cinco{
+        grid-column: 1 / 12;
+    }
+
+    .seis{
+        grid-column: 2/3;
+        grid-row: 9/13;
+    }
+}
+
+
+

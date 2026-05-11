@@ -8,9 +8,11 @@
 
   <!-- enlace a la estilo css -->
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./css/style.css">
 
-
+  
 
 
 
@@ -20,7 +22,11 @@
 
 <body>
 
-
+ <a href="">
+  <div class="btn-subir">
+      <p>subir</p>
+  </div>
+ </a>
 
   <header>
 
@@ -35,13 +41,13 @@
 
   <nav>
     <ul>
-      <li><a href="#"> Inicio</a></li>
-      <li><a href="#maqueta"> Maquetación</a></li>
-      <li><a href="#dise"> Diseño</a></li>
-      <li><a href="#galeria"> Galería</a></li>
-      <li><a href="#objetivos"> Objetivos</a></li>
-      <li><a href="#frame"> Frameworks</a></li>
-      <li><a href="#contacto"> Contacto</a></li>
+      <li><a href="#"><img src="./assets/icons/home.svg"class="icono" alt=""> Inicio</a></li>
+      <li><a href="#maqueta"><img src="./assets/icons/iframe.svg" class="icono" alt=""> Maquetación</a></li>
+      <li><a href="#dise"><img src="./assets/icons/lightbulb.svg" class="icono" alt=""> Diseño</a></li>
+      <li><a href="#galeria"><img src="./assets/icons/gallery.svg" class="icono" alt=""> Galería</a></li>
+      <li><a href="#objetivos"><img src="./assets/icons/home_pin.svg" class="icono" alt=""> Objetivos</a></li>
+      <li><a href="#frame"><img src="./assets/icons/newspaper.svg"class="icono" alt=""> Frameworks</a></li>
+      <li><a href="#contacto"><img src="./assets/icons/inventory.svg"class="icono" alt=""> Contacto</a></li>
     </ul>
 
   </nav>
@@ -131,8 +137,30 @@
       <div class="contenedor_galery">
         <h2>Galería de imágenes</h2>
 
+        <div class="galeria">
 
-      </div>
+            <picture class="uno">
+              <img src="assets/galeria/foto1.jpg" alt="aprendiendo python">
+            </picture>
+                        <picture class="dos">
+              <img src="assets/galeria/foto2.jpg" alt="aprendiendo programacion">
+            </picture>
+                        <picture class="tres">
+              <img src="assets/galeria/foto3.jpg" alt="pc escritorio">
+            </picture>
+
+            <picture class="cuatro">
+              <img src="assets/galeria/foto4.jpg" alt="celular">
+            </picture>
+
+            <picture class="cinco">
+              <img src="assets/galeria/foto5.jpg" alt="chica programando">
+            </picture>
+
+            <picture class="seis">
+              <img src="assets/galeria/foto6.jpg" alt="chico programando">
+            </picture>
+        </div>
 
       </div>
 
@@ -291,9 +319,9 @@
       <h4>Redes Sociales</h4>
 
       <ul>
-        <li> Instagram</li>
-        <li> Facebook</li>
-        <li> Twitter</li>
+        <li class="redes_sociales"> <i class="fa-brands fa-instagram"></i> Instagram</li>
+        <li class="redes_sociales"> <i class="fa-brands fa-facebook"></i> Facebook</li>
+        <li class="redes_sociales"> <i class="fa-brands fa-twitter"></i> Twitter</li>
       </ul>
 
 
