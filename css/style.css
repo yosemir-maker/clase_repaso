@@ -230,17 +230,42 @@ input,textarea{
     grid-row: 2 / 4;
 }
 
-@media (max-width: 900px ){
+@media (max-width: 900px){
 
+    .galeria{
+        width: 80%;
+    }
+
+    .galeria img{
+        height: 300px;
+    }
     .cinco{
-        grid-column: 1 / 12;
+        grid-column: 1 / 13;
     }
 
     .seis{
-        grid-column: 2/3;
-        grid-row: 9/13;
+        grid-column: 9/13;
+        grid-row: 2/3;
     }
 }
+
+@media (max-width 768px ){
+
+    .galeria{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+    }
+
+    .galeria img{
+        height: 200px;
+    }
+    .uno, .dos, .tres, .cuatro, .cinco, .seis{
+        grid-column: 1,13;
+
+    }
+}
+
 
 
 
