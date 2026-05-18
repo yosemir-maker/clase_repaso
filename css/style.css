@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* para establecer colores y otros objetos, ta incompleto */
+:root{
+
+    --letra_pagina:"Cabin", sans-serif;
+    --color_letra_pagina: #000
+    --color_fondo: #f2f2f2
+
+
+}
 
 html{
     scroll-behavior: smooth;
@@ -266,7 +275,7 @@ input,textarea{
     }
 }
 
-@media (max-width 768px ){
+@media (max-width:768px ){
 
     .titulo_principal{
         font-size: 24px;
